@@ -23,23 +23,21 @@
     <header class="header">
         <div class="header-container">
             <a href="buttons.php" class="logo">
-                <i class="fas fa-code"></i>
-                <span>AlerTaraQC</span>
+                <img src="images/logo.svg" alt="" class="logo-img">
             </a>
             
             <nav class="nav-center">
                 <ul class="nav-menu">
-                    <li><a href="buttons.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'buttons.php' ? 'active' : ''; ?>">Buttons</a></li>
-                    <li><a href="forms.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'forms.php' ? 'active' : ''; ?>">Forms</a></li>
-                    <li><a href="textfields.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'textfields.php' ? 'active' : ''; ?>">Text Fields</a></li>
-                    <li><a href="datatables.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'datatables.php' ? 'active' : ''; ?>">Data Tables</a></li>
-                    <li><a href="content.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'content.php' ? 'active' : ''; ?>">Content</a></li>
-                    <li><a href="cards.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'cards.php' ? 'active' : ''; ?>">Cards</a></li>
+                    <li><a href="buttons.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'buttons.php' ? 'active' : ''; ?>">Home</a></li>
+                    <li><a href="forms.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'forms.php' ? 'active' : ''; ?>">About</a></li>
+                    <li><a href="textfields.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'textfields.php' ? 'active' : ''; ?>">Systems</a></li>
+                    <li><a href="datatables.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'datatables.php' ? 'active' : ''; ?>">Departments</a></li>
+                    <li><a href="content.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'content.php' ? 'active' : ''; ?>">Contact Us</a></li>
                 </ul>
             </nav>
             
             <div class="nav-actions">
-                <a href="login.php" class="btn btn-secondary">Login</a>
+                <a href="login.php" class="btn btn-secondary">FAQs</a>
                 <a href="signup.php" class="btn btn-primary">Learn More</a>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
                     <i class="fas fa-bars"></i>
@@ -51,8 +49,7 @@
         <div class="mobile-nav">
             <div class="mobile-nav-header">
                 <a href="buttons.php" class="logo">
-                    <i class="fas fa-code"></i>
-                    <span>AlerTaraQC</span>
+                    <img src="images/logo.svg" alt="" class="logo-img">
                 </a>
                 <button class="mobile-nav-close" aria-label="Close mobile menu">
                     <i class="fas fa-times"></i>

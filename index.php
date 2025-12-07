@@ -17,17 +17,18 @@
 include 'includes/header.php'; ?>
 
 <link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/global.css">
 
 
-    <div class="main-content">
-        <div class="main-container">
-            <div class="sub-container">
-                <div class="page-content">
-                    <!--Insert content-->
-                </div>
+
+<div class="main-content">
+    <div class="main-container">
+        <div class="sub-container">
+            <div class="page-content">
+                <!--Insert content-->
             </div>
         </div>
     </div>
-
+</div>
 
 <?php include 'includes/footer.php'; ?>

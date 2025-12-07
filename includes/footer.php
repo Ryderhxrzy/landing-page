@@ -8,8 +8,7 @@
                 <!-- Footer Brand Section -->
                 <div class="footer-brand">
                     <a href="index.php" class="footer-logo">
-                        <i class="fas fa-code"></i>
-                        <span>AlerTaraQC</span>
+                        <img src="images/logo.svg" alt="AlerTaraQC Logo" class="footer-logo-img">
                     </a>
                     <p class="footer-description">
                         Building modern web applications with clean code, responsive design, and user-friendly interfaces. Your trusted partner for digital solutions.

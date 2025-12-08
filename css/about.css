@@ -90,26 +90,16 @@
     padding: 2.5rem;
     border-radius: 16px;
     border: 1px solid var(--border-color-1);
-    transition: all 0.3s ease;
     text-align: center;
 }
 
-.about-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-1);
-    border-color: var(--primary-color-1);
+.about-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color-1);
+    margin-bottom: 1rem;
+    display: block;
 }
 
-.about-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary-color-1), var(--primary-color-2));
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1.5rem;
-}
 
 .about-icon i {
     font-size: 2rem;
@@ -119,7 +109,7 @@
 .about-item h3 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--text-color-1);
+    color: var(--text-secondary-1);
     margin-bottom: 1rem;
 }
 
@@ -145,12 +135,6 @@
     background: var(--card-bg-1);
     border-radius: 12px;
     border: 1px solid var(--border-color-1);
-    transition: all 0.3s ease;
-}
-
-.about-stats .stat-item:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-1);
 }
 
 .about-stats .stat-item h4 {

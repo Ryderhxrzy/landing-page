@@ -92,7 +92,7 @@
 .feature-item h3 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-color-1);
+    color: var(--text-secondary-1);
     margin-bottom: 0.75rem;
 }
 
@@ -101,49 +101,6 @@
     color: var(--text-secondary-1);
     line-height: 1.6;
     margin: 0;
-}
-
-/* Mouse Scroll Indicator */
-.mouse-scroll {
-    position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-}
-
-.mouse {
-    width: 30px;
-    height: 50px;
-    border: 3px solid var(--text-secondary-1);
-    border-radius: 25px;
-    position: relative;
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.wheel {
-    width: 4px;
-    height: 10px;
-    background: var(--text-secondary-1);
-    border-radius: 2px;
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: scroll-wheel 2s infinite;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-@keyframes scroll-wheel {
-    0% {
-        opacity: 1;
-        transform: translateX(-50%) translateY(0);
-    }
-    100% {
-        opacity: 0;
-        transform: translateX(-50%) translateY(15px);
-    }
 }
 
 /* ===================================

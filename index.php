@@ -42,48 +42,41 @@ include 'includes/header.php'; ?>
                             <!-- Features -->
                             <div class="home-features">
                                 <div class="feature-item">
-                                    <i class="icon-shield"></i>
+                                    <i class="fas fa-shield-alt"></i>
                                     <h3>Real-time Monitoring</h3>
                                     <p>24/7 surveillance and instant alert system for potential threats.</p>
                                 </div>
 
                                 <div class="feature-item">
-                                    <i class="icon-users"></i>
+                                    <i class="fas fa-users"></i>
                                     <h3>Multi-Department Coordination</h3>
                                     <p>Seamless communication between emergency services and government agencies.</p>
                                 </div>
 
                                 <div class="feature-item">
-                                    <i class="icon-chart"></i>
+                                    <i class="fas fa-chart-line"></i>
                                     <h3>Data Analytics</h3>
                                     <p>Predictive analytics for improved emergency response and resource allocation.</p>
                                 </div>
 
                                 <div class="feature-item">
-                                    <i class="icon-map"></i>
+                                    <i class="fas fa-map-marked-alt"></i>
                                     <h3>Incident Mapping</h3>
                                     <p>Real-time incident locations displayed on an intelligent city map.</p>
                                 </div>
 
                                 <div class="feature-item">
-                                    <i class="icon-truck"></i>
+                                    <i class="fas fa-truck"></i>
                                     <h3>Resource Tracking</h3>
                                     <p>Monitor vehicles, personnel, and emergency equipment instantly.</p>
                                 </div>
 
                                 <div class="feature-item">
-                                    <i class="icon-database"></i>
+                                    <i class="fas fa-database"></i>
                                     <h3>Centralized Database</h3>
                                     <p>Unified data management for all departments to share and access.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Mouse Scroll Indicator -->
-                    <div class="mouse-scroll">
-                        <div class="mouse">
-                            <div class="wheel"></div>
                         </div>
                     </div>
                 </section>
@@ -100,9 +93,7 @@ include 'includes/header.php'; ?>
                             
                             <div class="about-grid">
                                 <div class="about-item">
-                                    <div class="about-icon">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
+                                    <i class="fas fa-shield"></i>
                                     <h3>Our Mission</h3>
                                     <p>
                                         To provide a unified, efficient, and responsive emergency management system that 
@@ -112,9 +103,7 @@ include 'includes/header.php'; ?>
                                 </div>
                                 
                                 <div class="about-item">
-                                    <div class="about-icon">
-                                        <i class="fas fa-eye"></i>
-                                    </div>
+                                    <i class="fas fa-eye"></i>
                                     <h3>Our Vision</h3>
                                     <p>
                                         To become the model for smart city emergency management in the Philippines, 
@@ -124,9 +113,7 @@ include 'includes/header.php'; ?>
                                 </div>
                                 
                                 <div class="about-item">
-                                    <div class="about-icon">
-                                        <i class="fas fa-star"></i>
-                                    </div>
+                                    <i class="fas fa-heart"></i>
                                     <h3>Our Values</h3>
                                     <p>
                                         Integrity, Excellence, Collaboration, and Innovation guide our commitment to 

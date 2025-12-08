@@ -28,11 +28,11 @@
             
             <nav class="nav-center">
                 <ul class="nav-menu">
-                    <li><a href="buttons.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'buttons.php' ? 'active' : ''; ?>">Home</a></li>
-                    <li><a href="forms.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'forms.php' ? 'active' : ''; ?>">About</a></li>
-                    <li><a href="textfields.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'textfields.php' ? 'active' : ''; ?>">Systems</a></li>
-                    <li><a href="datatables.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'datatables.php' ? 'active' : ''; ?>">Departments</a></li>
-                    <li><a href="content.php" class="nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'content.php' ? 'active' : ''; ?>">Contact Us</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#systems" class="nav-link">Systems</a></li>
+                    <li><a href="#departments" class="nav-link">Departments</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </nav>
             
@@ -56,13 +56,11 @@
                 </button>
             </div>
             <ul class="mobile-nav-menu">
-                <li><a href="buttons.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'buttons.php' ? 'active' : ''; ?>">Buttons</a></li>
-                <li><a href="forms.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'forms.php' ? 'active' : ''; ?>">Forms</a></li>
-                <li><a href="textfields.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'textfields.php' ? 'active' : ''; ?>">Text Fields</a></li>
-                <li><a href="datatables.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'datatables.php' ? 'active' : ''; ?>">Data Tables</a></li>
-                <li><a href="content.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'content.php' ? 'active' : ''; ?>">Content</a></li>
-                <li><a href="cards.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'cards.php' ? 'active' : ''; ?>">Cards</a></li>
-                <li><a href="modals.php" class="mobile-nav-link <?php echo basename($_SERVER['PHP_SELF']) == 'modals.php' ? 'active' : ''; ?>">Modals</a></li>
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#systems" class="mobile-nav-link">Systems</a></li>
+                <li><a href="#departments" class="mobile-nav-link">Departments</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact Us</a></li>
                 <li class="mobile-nav-divider"></li>
                 <li><a href="login.php" class="mobile-nav-link">Login</a></li>
                 <li><a href="signup.php" class="mobile-nav-link">Learn More</a></li>

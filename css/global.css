@@ -15,6 +15,8 @@
     --border-color-1: #e5e5e5;
     --card-bg-1: #ffffff;
     --shadow-1: rgba(0, 0, 0, 0.05);
+    --bg-color-1-alt: #f8fafc;
+    --card-bg-1-alt: #f1f5f9;
     --max-width: 1300px;
     --font-family-1: "Helvetica World", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -23,13 +25,15 @@
 [data-theme="dark"] {
     --text-color-1: #fafafa;
     --text-secondary-1: #a1a1aa;
-    --bg-color-1: #000000;
+    --bg-color-1: #0a0a0afb;
     --header-bg-1: #0a0a0a;
     --footer-bg-1: #0a0a0a;
     --nav-text-1: #fafafa;
     --border-color-1: #27272a;
     --card-bg-1: #0a0a0a;
     --shadow-1: rgba(0, 0, 0, 0.2);
+    --bg-color-1-alt: #1a1a1a;
+    --card-bg-1-alt: #2a2a2a;
 }
 
 /* ===================================
@@ -498,6 +502,11 @@ html {
     border-top: 1px solid var(--border-color-1);
 }
 
+.footer-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
 .footer-main {
     display: grid;
@@ -745,20 +754,29 @@ html {
     .footer-brand {
         grid-column: 1 / -1;
         max-width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+        margin: 0 auto 1rem;
+    }
+    
+    .footer-logo {
+        justify-content: center;
+    }
+    
+    .footer-description {
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
     }
     
     .footer-bottom {
         flex-direction: column;
         gap: 1rem;
-        align-items: flex-start;
+        align-items: center;
         padding: 1.5rem 0;
     }
-    
-    .footer-legal {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
     .theme-toggle {
         order: -1;
     }
@@ -768,11 +786,6 @@ html {
 @media (max-width: 480px) {
     .header-container {
         padding: 0 0.75rem;
-    }
-    
-    .main-content {
-        padding: 0 0.5rem;
-        padding-top: 4.5rem;
     }
     
     .footer-container {

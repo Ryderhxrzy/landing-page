@@ -3,9 +3,7 @@
    =================================== */
 .main-container {
     width: 100%;
-    max-width: var(--max-width);
     margin: 0 auto;
-    padding: 0 2rem;
     position: relative;
 }
 
@@ -14,7 +12,6 @@
     max-width: 100%;
     position: relative;
     z-index: 1;
-    margin-top: 2%;
 }
 
 /* ===================================
@@ -22,7 +19,6 @@
    =================================== */
 .main-content {
     flex: 1;
-    padding-top: 4rem;
 }
 
 @media (max-width: 768px) {
@@ -30,34 +26,10 @@
         padding: 0 1rem;
     }
     
-    .main-content {
-        padding: 0 0.75rem;
-        padding-top: 4.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-content {
-        padding: 0 0.5rem;
-        padding-top: 4.5rem;
-    }
 }
 
 .main-container:hover::before {
     opacity: 1;
-}
-
-/* Responsive adjustments for containers */
-@media (max-width: 768px) {
-    .main-container {
-        padding: 0 1.5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .main-container {
-        padding: 0 1rem;
-    }
 }
 
 /* ===================================

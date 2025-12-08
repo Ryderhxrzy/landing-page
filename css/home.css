@@ -5,12 +5,8 @@
 .home {
     background-color: var(--bg-color-1);
     width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 6rem 1rem;
     position: relative;
-    padding: 6rem 1rem 2rem;
     left: 0;
     right: 0;
 }
@@ -47,7 +43,7 @@
 }
 
 .home .tara {
-    margin-bottom: 12px;
+    margin-bottom: 13px;
 }
 
 .home .content h2 {
@@ -107,53 +103,47 @@
     margin: 0;
 }
 
-/* Home CTA Section */
-.home-cta {
-    text-align: center;
-    margin: 4rem 0;
-    padding: 3rem 2rem;
-    background: linear-gradient(135deg, var(--card-bg-1) 0%, var(--card-bg-1-alt) 100%);
-    border-radius: 16px;
-    border: 1px solid var(--border-color-1);
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+/* Mouse Scroll Indicator */
+.mouse-scroll {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
-.home-cta h3 {
-    font-size: 1.75rem;
-    font-weight: 600;
-    color: var(--text-color-1);
-    margin-bottom: 1rem;
+.mouse {
+    width: 30px;
+    height: 50px;
+    border: 3px solid var(--text-secondary-1);
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
 }
 
-.home-cta p {
-    font-size: 1.1rem;
-    color: var(--text-secondary-1);
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.wheel {
+    width: 4px;
+    height: 10px;
+    background: var(--text-secondary-1);
+    border-radius: 2px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll-wheel 2s infinite;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.cta-benefits {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-.benefit-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    color: var(--text-secondary-1);
-}
-
-.benefit-item i {
-    color: var(--primary-color-1);
-    font-size: 1.2rem;
+@keyframes scroll-wheel {
+    0% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(15px);
+    }
 }
 
 /* ===================================
@@ -171,19 +161,6 @@
         max-width: 1400px;
         gap: 3rem;
     }
-    
-    .home-cta {
-        padding: 2.5rem 1.5rem;
-        margin: 3rem 0;
-    }
-    
-    .home-cta h3 {
-        font-size: 1.5rem;
-    }
-    
-    .cta-benefits {
-        gap: 1.5rem;
-    }
 }
 
 /* Desktop - 1025px to 1399px */
@@ -195,25 +172,6 @@
     .home-features {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 2rem;
-    }
-    
-    .home-cta {
-        padding: 2rem 1.5rem;
-        margin: 2.5rem 0;
-    }
-    
-    .home-cta h3 {
-        font-size: 1.4rem;
-    }
-    
-    .home-cta p {
-        font-size: 1rem;
-    }
-    
-    .cta-benefits {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
     }
 }
 
@@ -269,35 +227,12 @@
     .feature-item {
         padding: 1.5rem;
     }
-    
-    .home-cta {
-        padding: 2rem 1.25rem;
-        margin: 2rem 0;
-    }
-    
-    .home-cta h3 {
-        font-size: 1.3rem;
-    }
-    
-    .home-cta p {
-        font-size: 0.95rem;
-    }
-    
-    .cta-benefits {
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .benefit-item {
-        font-size: 0.9rem;
-    }
 }
 
 /* Mobile Large - 600px to 767px */
 @media (max-width: 600px) {
     .home {
-        padding: 9rem 1rem 2rem;
+        padding: 7rem 1rem 2rem;
         min-height: 80vh;
     }
     
@@ -321,6 +256,7 @@
         gap: 1.25rem;
         margin: 2rem auto;
         padding: 0 1.25rem;
+        max-width: var(--max-width);
     }
     
     .feature-item {
@@ -330,36 +266,12 @@
     .feature-item i {
         font-size: 2.2rem;
     }
-    
-    .home-cta {
-        padding: 1.75rem 1rem;
-        margin: 1.75rem 0;
-    }
-    
-    .home-cta h3 {
-        font-size: 1.25rem;
-    }
-    
-    .home-cta p {
-        font-size: 0.9rem;
-        margin-bottom: 1.5rem;
-    }
-    
-    .cta-benefits {
-        gap: 0.75rem;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .benefit-item {
-        font-size: 0.85rem;
-    }
 }
 
 /* Mobile Small - 480px and below */
 @media (max-width: 480px) {
     .home {
-        padding: 10rem 0.75rem 2rem;
+        padding: 8rem 0.75rem 2rem;
         min-height: 75vh;
     }
     

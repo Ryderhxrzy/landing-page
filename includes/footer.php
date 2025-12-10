@@ -83,7 +83,7 @@
                     <a href="#" class="footer-link">Cookie Policy</a>
                 </div>
                 
-                <div class="theme-toggle">
+                <!--<div class="theme-toggle">
                     <button class="theme-toggle-btn" data-theme="system" aria-label="System theme">
                         <i class="fas fa-desktop"></i>
                     </button>
@@ -93,7 +93,7 @@
                     <button class="theme-toggle-btn" data-theme="dark" aria-label="Dark theme">
                         <i class="fas fa-moon"></i>
                     </button>
-                </div>
+                </div>-->
             </div>
         </div>
                 </div>

@@ -83,7 +83,7 @@
                     <a href="#" class="footer-link">Cookie Policy</a>
                 </div>
                 
-                <!--<div class="theme-toggle">
+                <div class="theme-toggle">
                     <button class="theme-toggle-btn" data-theme="system" aria-label="System theme">
                         <i class="fas fa-desktop"></i>
                     </button>
@@ -93,7 +93,7 @@
                     <button class="theme-toggle-btn" data-theme="dark" aria-label="Dark theme">
                         <i class="fas fa-moon"></i>
                     </button>
-                </div>-->
+                </div>
             </div>
         </div>
                 </div>
@@ -136,9 +136,15 @@
         const themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
         const htmlElement = document.documentElement;
 
-        // Load saved theme
-        const savedTheme = localStorage.getItem('theme') || 'system';
-        htmlElement.setAttribute('data-theme', savedTheme);
+        // Load saved theme (defaults to light for first-time visitors)
+        const savedTheme = localStorage.getItem('theme') || 'light';
+
+        // Set the theme based on saved preference
+        if (savedTheme === 'system') {
+            applySystemTheme();
+        } else {
+            htmlElement.setAttribute('data-theme', savedTheme);
+        }
         updateThemeButtons(savedTheme);
 
         themeToggleBtns.forEach(btn => {
@@ -177,11 +183,6 @@
                 applySystemTheme();
             }
         });
-
-        // Apply system theme on load if needed
-        if (savedTheme === 'system') {
-            applySystemTheme();
-        }
 
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {

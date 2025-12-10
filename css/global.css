@@ -290,28 +290,6 @@ html {
     background-color: var(--border-color-1);
 }
 
-/* Mobile Close Button */
-.mobile-nav-close {
-    background: none;
-    border: none;
-    color: var(--nav-text-1);
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-}
-
-.mobile-nav-close:hover {
-    background-color: var(--border-color-1);
-    color: var(--primary-color-1);
-}
-
 /* ===================================
    BUTTON STYLES
    =================================== */
@@ -375,9 +353,10 @@ html {
     height: 100vh;
     background: var(--header-bg-1);
     border-left: 1px solid var(--border-color-1);
-    transition: right 0.3s ease;
+    transition: right 0.3s ease, visibility 0s 0.3s;
     z-index: 1001;
     overflow-y: auto;
+    overflow-x: hidden;
     display: block !important;
     visibility: hidden;
 }
@@ -385,6 +364,7 @@ html {
 .mobile-nav.active {
     right: 0;
     visibility: visible;
+    transition: right 0.3s ease, visibility 0s 0s;
 }
 
 .mobile-nav-header {
@@ -392,13 +372,14 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--border-color-1);
     background: var(--header-bg-1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10;
+    width: 100%;
 }
 
 .mobile-nav-logo {

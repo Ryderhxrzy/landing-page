@@ -55,9 +55,8 @@ class MobileMenu {
             this.mobileNav.classList.add('active');
             document.body.style.overflow = 'hidden';
             this.isOpen = true;
-            
-            // Update hamburger icon
-            this.menuToggle.innerHTML = '<i class="fas fa-times"></i>';
+
+            // Keep hamburger icon as is (don't change to X)
         }
     }
 
@@ -66,9 +65,8 @@ class MobileMenu {
             this.mobileNav.classList.remove('active');
             document.body.style.overflow = '';
             this.isOpen = false;
-            
-            // Update hamburger icon
-            this.menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+
+            // Keep hamburger icon as is (don't change back)
         }
     }
 }

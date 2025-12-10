@@ -105,10 +105,10 @@
     <script>
         // Mobile Navigation Toggle
         const mobileMenuToggle = document.querySelectorAll('.mobile-menu-toggle');
-        const mobileNavClose = document.querySelector('.mobile-nav-close');
         const mobileNav = document.querySelector('.mobile-nav');
         const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
 
+        // Open/close menu when clicking hamburger icon
         mobileMenuToggle.forEach(toggle => {
             toggle.addEventListener('click', () => {
                 mobileNav.classList.toggle('active');
@@ -117,19 +117,23 @@
             });
         });
 
-        // Close button functionality
-        if (mobileNavClose) {
-            mobileNavClose.addEventListener('click', () => {
+        // Close menu when clicking overlay
+        if (mobileNavOverlay) {
+            mobileNavOverlay.addEventListener('click', () => {
                 mobileNav.classList.remove('active');
                 mobileNavOverlay.classList.remove('active');
                 document.body.style.overflow = '';
             });
         }
 
-        mobileNavOverlay.addEventListener('click', () => {
-            mobileNav.classList.remove('active');
-            mobileNavOverlay.classList.remove('active');
-            document.body.style.overflow = '';
+        // Close menu when clicking on mobile nav links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileNav.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
         });
 
         // Theme Toggle

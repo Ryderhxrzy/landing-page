@@ -52,9 +52,6 @@
                 <a href="buttons.php" class="logo">
                     <img src="images/logo.svg" alt="" class="logo-img">
                 </a>
-                <button class="mobile-nav-close" aria-label="Close mobile menu">
-                    <i class="fas fa-times"></i>
-                </button>
             </div>
             <ul class="mobile-nav-menu">
                 <li><a href="#home" class="mobile-nav-link">Home</a></li>
